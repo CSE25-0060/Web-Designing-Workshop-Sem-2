@@ -1,0 +1,30 @@
+body {
+    font-family: arial;
+    background-color: #9adff1;
+    text-align: center;
+}
+.container{
+    width: 650px;
+    margin: 40px auto;
+    padding: 20px;
+    background: rgb(253, 253, 159);
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+}
+input{
+    padding: 8px;
+    margin: 5px;
+}
+button{
+    padding: 8px 12px;
+    margin: 5px;
+    background-color: rgb(245, 143, 160);
+    color:bisque;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#output{
+    margin-top: 20px;
+    text-align: left;
+}

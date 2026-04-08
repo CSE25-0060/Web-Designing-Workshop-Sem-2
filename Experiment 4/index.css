@@ -1,0 +1,32 @@
+body{
+    font-family: arial;
+    background-color: antiquewhite;
+    text-align: center;
+    padding: 40px;
+}
+.conatiner{
+    background: peachpuff;
+    padding: 25px;
+    width: 400px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(5, 5, 44);
+}
+input{
+    padding: 8px;
+    width: 80%;
+    margin-top: 5px;
+}
+button{
+    padding: 10px 20px;
+    background-color: rgb(88, 10, 23);
+    color:rgb(201, 251, 177);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#result{
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 18px;
+}

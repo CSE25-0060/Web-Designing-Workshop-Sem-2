@@ -4,23 +4,23 @@ function calculateresult()
     let total=0;
     for(let i=1;i<=n;i++)
     {
-        let marks=parseFloat(prompt("enter marks for subject"+i));
+        let marks=parseFloat(prompt("Enter marks for each subject"+i));
         total+=marks;
     }
     let average=total/n;
     let grade;
     if(average>=90)
         grade="A";
-    if(average>80)
+    else if(average>80)
         grade="B";
-    if(average>=70)
+    else if(average>=70)
         grade="c";
-    if(average>=60)
+    else if(average>=60)
         grade="d";
     else
         grade="F";
 
-        
+    let result;    
     if(average>=60)
         result="pass";
     else
