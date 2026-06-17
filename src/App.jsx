@@ -1,21 +1,26 @@
-import Student from "./Student"; 
+import React, { useState } from "react"; 
 function App() { 
+  const [count, setCount] = useState(0); 
+  const increment = () => { 
+    setCount(count + 1); 
+  }; 
+ 
+  const decrement = () => { 
+    setCount(count - 1); 
+  }; 
+  const reset = () => { 
+    setCount(0); 
+  }; 
   return ( 
-    <div> 
-      <h1>Student Information</h1> 
-      <Student 
-        name="Sanskriti" 
-        course="Computer Science" 
-        marks="92" /> 
-      <Student 
-        name="Sujal Pandey" 
-        course="Information Technology" 
-        marks="90"  /> 
-      <Student 
-        name="Bhavya Pandey" 
-        course="Electronics" 
-        marks="89"  /> 
+    <div className="container"> 
+      <h1>React Counter Application</h1> 
+      <h2 className="counter">{count}</h2> 
+      <div className="buttons"> 
+        <button onClick={increment}>Increment (+)</button> 
+        <button onClick={decrement}>Decrement (-)</button> 
+        <button onClick={reset}>Reset</button> 
+      </div> 
     </div> 
   ); 
 } 
-export default App;
+export default App; 
