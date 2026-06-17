@@ -1,0 +1,163 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<title>TechStore</title> 
+<!-- Bootstrap CSS --> 
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+rel="stylesheet"> 
+ 
+<!-- Internal CSS --> 
+<style> 
+body{ 
+background:#f8f9fa; 
+} 
+ 
+.card:hover{ 
+transform: scale(1.05); 
+transition: 0.3s; 
+} 
+ 
+footer{ 
+margin-top:50px; 
+} 
+</style> 
+ 
+</head> 
+<body> 
+ 
+<!-- NAVBAR --> 
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark"> 
+<div class="container"> 
+<a class="navbar-brand" href="#">TechStore</a> 
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu"> 
+<span class="navbar-toggler-icon"></span> 
+</button> 
+<div class="collapse navbar-collapse" id="menu"> 
+<ul class="navbar-nav ms-auto"> 
+<li class="nav-item"><a class="nav-link" href="#">Home</a></li> 
+<li class="nav-item"><a class="nav-link" href="#">Products</a></li> 
+<li class="nav-item"><a class="nav-link" href="#">About</a></li> 
+<li class="nav-item"><a class="nav-link" href="#">Contact</a></li> 
+</ul> 
+</div> 
+</div> 
+</nav> 
+ 
+<!-- PRODUCTS --> 
+<div class="container mt-5"> 
+<div class="row"> 
+ 
+<!-- Card 1 --> 
+<div class="col-lg-4 col-md-6 col-12 mb-4"> 
+<div class="card"> 
+<img src="https://www.bing.com/images/search?view=detailV2&ccid=DBc3TnXP&id=9B4BFF1A5B8B212DDF9CC139F827A73C3910B592&thid=OIP.DBc3TnXPpxe8ZbGUegjl8gHaE8&mediaurl=https%3A%2F%2Fstatic1.xdaimages.com%2Fwordpress%2Fwp-content%2Fuploads%2Fwm%2F2024%2F06%2Fsurface-laptop-7-34.jpg&exph=2000&expw=3000&q=laptop&ck=CA42A38E33255CC79368CFCC028B437B&selectedIndex=17&itb=0&cw=1375&ch=745&ajaxhist=0&ajaxserp=0&shtc=0&shth=OIP.DBc3TnXPpxe8ZbGUegjl8gHaE8&shsc=idp&form=EX0050&shid=74cdf019-5ff2-4504-839e-5d2e86d39eff&shtp=GetUrl&shtk=NiB0aW1lcyBmYW5zIGZvcmNlZCBNaWNyb3NvZnQgdG8gZml4IFdpbmRvd3M%3D&shdk=Rm91bmQgb24gQmluZyBmcm9tIHd3dy54ZGEtZGV2ZWxvcGVycy5jb20%3D&shhk=2BO%2Bg4nIXCojZhaKL6N2fLqCKcSZGPRE4kYns4rGFxU%3D" width="100px" height="200px" class="cardimg-top"> 
+<div class="card-body"> 
+<h5>Laptop</h5> 
+<p>High performance laptop</p> 
+<h6>₹50,000 <span class="badge bg-success">New</span></h6> 
+<button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#m1">View 
+Details</button> 
+</div> 
+</div> 
+</div> 
+ 
+<!-- Card 2 --> 
+<div class="col-lg-4 col-md-6 col-12 mb-4"> 
+<div class="card"> 
+<img 
+src="https://www.bing.com/images/search?view=detailV2&ccid=aW2O2gG5&id=8FFFA44AAB1E8BA50D40F8E488DD2BE456F1FC36&thid=OIP.aW2O2gG5ywgF_fRZxaKevgHaHa&mediaurl=https%3A%2F%2Fcdn.beebom.com%2Fmobile%2Fvivo-y400-pro-front-back.png&exph=1000&expw=1000&q=mobile&ck=D88DA9DEC54C79A76983446BBF6DEB1D&selectedIndex=0&itb=1&cw=1375&ch=745&ajaxhist=0&ajaxserp=0&shtc=0&shth=OIP.aW2O2gG5ywgF_fRZxaKevgHaHa&shsc=idp&form=EX0050&shid=cfdda83b-352d-404d-bdba-d02bab001647&shtp=GetUrl&shtk=TGF0ZXN0IE1vYmlsZSBQaG9uZXMgaW4gSW5kaWEgKEp1bCAyMDI1KSB8IEJlZWJvbQ%3D%3D&shdk=Rm91bmQgb24gQmluZyBmcm9tIGdhZGdldHMuYmVlYm9tLmNvbQ%3D%3D&shhk=bw3Ps567Bvxg75De954DaLV2NVJOGbCjMyahzmN3pp8%3D" width="100px" height="200px" class="cardimg-top"> 
+<div class="card-body"> 
+<h5>Mobile</h5> 
+<p>Latest smartphone</p> 
+<h6>₹30,000 <span class="badge bg-danger">Sale</span></h6> 
+<button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#m2">View 
+Details</button> 
+</div> 
+</div> 
+</div> 
+ 
+<!-- Card 3 --> 
+<div class="col-lg-4 col-md-6 col-12 mb-4"> 
+<div class="card"> 
+<img src="https://www.bing.com/images/search?view=detailV2&ccid=A6NlLsyD&id=E9001281DFE52B30510B136A1C694D30B0ECE601&thid=OIP.A6NlLsyDUn2ioCcJT4TukgHaHa&mediaurl=https%3A%2F%2Fs.alicdn.com%2F%40sc04%2Fkf%2FH9abaf32d16ba44918e60f87ad6d57a99f.jpg_720x720q50.jpg&exph=720&expw=720&q=headphones&ck=CFC1A81C649002729E437AC040ABE39D&selectedindex=6&itb=0&cw=1375&ch=745&ajaxhist=0&ajaxserp=0&vt=0&pivotparams=insightsToken%3Dccid_%252FSAVcpLN*cp_DB83BF7E0BCBC391A940F5D9FAB75AA1*mid_118017FDD7A34A90E472F91F2F4D9206CE9C7926*thid_OIP.%21_SAVcpLN9Gq3Pv-LU780uwHaE8&sim=11&iss=VSI&ajaxhist=0&ajaxserp=0&shtc=0&shth=OIP.A6NlLsyDUn2ioCcJT4TukgHaHa&shsc=idp&form=EX0050&shid=f4e1c969-05b7-40f5-ab77-45f06ea40006&shtp=GetUrl&shtk=UDkgUHJvIE1heCBXaXJlbGVzcyBIZWFkcGhvbmVzIE92ZXIgRWFyIFN0ZXJlbyBIaS1maSBIZWFkc2V0IEJhc3MgV2l0aCAuLi4%3D&shdk=Rm91bmQgb24gQmluZyBmcm9tIHd3dy5hbGliYWJhLmNvbQ%3D%3D&shhk=de%2B0%2BuaAlpmWgm42YfD4ax5rydP3Pnx%2FJ₀CmExRZ8FU%3D" width="1００px" height="２００px" class="card-img-top"> 
+<div class="card-body"> 
+<h5>Headphones</h5> 
+<p>Noise cancelling</p> 
+<h6>₹5,000 <span class="badge bg-success">New</span></h6> 
+<button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#m3">View 
+Details</button> 
+</div> 
+</div> 
+</div> 
+ 
+</div> 
+</div> 
+ 
+<!-- MODALS --> 
+ 
+<div class="modal fade" id="m1"> 
+<div class="modal-dialog"> 
+<div class="modal-content"> 
+<div class="modal-header"> 
+<h5>Laptop Details</h5> 
+<button class="btn-close" data-bs-dismiss="modal"></button> 
+</div> 
+<div class="modal-body"> 
+16GB RAM, SSD, Fast performance 
+</div> 
+<div class="modal-footer"> 
+<button class="btn btn-secondary" data-bs-dismiss="modal">Close</button> 
+</div> 
+</div> 
+</div> 
+</div> 
+ 
+<div class="modal fade" id="m2"> 
+<div class="modal-dialog"> 
+<div class="modal-content"> 
+<div class="modal-header"> 
+<h5>Mobile Details</h5> 
+<button class="btn-close" data-bs-dismiss="modal"></button> 
+</div> 
+<div class="modal-body"> 
+High camera quality smartphone 
+</div> 
+<div class="modal-footer"> 
+<button class="btn btn-secondary" data-bs-dismiss="modal">Close</button> 
+</div> 
+</div> 
+</div> 
+</div> 
+ 
+<div class="modal fade" id="m3"> 
+<div class="modal-dialog"> 
+<div class="modal-content"> 
+<div class="modal-header"> 
+<h5>Headphones Details</h5> 
+<button class="btn-close" data-bs-dismiss="modal"></button> 
+</div> 
+<div class="modal-body"> 
+Best sound quality with bass 
+</div> 
+<div class="modal-footer"> 
+<button class="btn btn-secondary" data-bs-dismiss="modal">Close</button> 
+</div> 
+</div> 
+</div> 
+</div> 
+ 
+<!-- FOOTER --> 
+<footer class="bg-dark text-white text-center p-3"> 
+<p>© 2026 TechStore | Follow us on social media</p> 
+<br>
+<p>SANSKRITI</p>
+<p>CSE 21</p>
+<p>2503201000999</p>
+</footer> 
+ 
+<!-- Bootstrap JS --> 
+<script 
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script> 
+ 
+</body> 
+</html>
