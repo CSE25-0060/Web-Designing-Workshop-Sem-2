@@ -41,7 +41,6 @@ function displayEmployees() {
 
     document.getElementById("output").innerHTML = output;
 }
-
 function filterSalary() {
     let filtered = employees.filter(emp => emp.salary > 50000);
 
@@ -53,17 +52,14 @@ function filterSalary() {
             Salary: ₹${emp.salary} <br>
         `;
     });
-
     document.getElementById("output").innerHTML = output;
 }
-
 function totalSalary() {
     let total = employees.reduce((sum, emp) => sum + emp.salary, 0);
 
     document.getElementById("output").innerHTML = 
         "<h3>Total Salary Payout: ₹" + total + "</h3>";
 }
-
 function averageSalary() {
     if (employees.length === 0) {
         document.getElementById("output").innerHTML = 
@@ -77,11 +73,12 @@ function averageSalary() {
     document.getElementById("output").innerHTML = 
         "<h3>Average Salary: ₹" + avg.toFixed(2) + "</h3>";
 }
-
 function countDepartment() {
     let deptName = prompt("Enter Department Name:");
     let count = employees.filter(emp => emp.department === deptName).length;
 
-    document.getElementById("output").innerHTML = 
-        "<h3>Employees in " + deptName + ": " + count + "</h3>";
+    document.getElementById("output").innerHTML = "<h3>Employees in " + deptName + ": " + count + "</h3>";
 }
+
+
+
